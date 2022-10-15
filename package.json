@@ -1,0 +1,46 @@
+{
+  "name": "promisify-wait",
+  "version": "1.0.0",
+  "description": "Simple promisify wait function",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint . --ext .ts",
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "npm run format && git add -A src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanYann/wait-js.git"
+  },
+  "keywords": [
+    "wait",
+    "promisify",
+    "millisecond",
+    "second",
+    "minute",
+    "hour"
+  ],
+  "author": "SanYann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanYann/wait-js/issues"
+  },
+  "files": [
+    "lib /**/*"
+  ],
+  "homepage": "https://github.com/SanYann/wait-js#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.4"
+  }
+}
