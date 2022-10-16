@@ -33,7 +33,7 @@
     "url": "https://github.com/SanYann/wait-js/issues"
   },
   "files": [
-    "lib /**/*"
+    "lib/**/*"
   ],
   "homepage": "https://github.com/SanYann/wait-js#readme",
   "devDependencies": {
